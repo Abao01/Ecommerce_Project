@@ -2,6 +2,7 @@ require "csv"
 
 Game.delete_all
 Publisher.delete_all
+Page.delete_all
 
 filename = Rails.root.join("db/games.csv")
 #puts "Loading Games from the csv file: #{filename}"
@@ -26,5 +27,16 @@ games.each do |m|
 
   end
 end
+Page.create(
+  title:     "About the website",
+  content:   "The data powering this game website was provided by nintendo."
+)
+
+Page.create(
+  title:     "Contact Me",
+  content:   "If you like this website and would like to reach out, please email me at 2519663066h@gmail.com"
+)
+
 puts "Created #{Publisher.count} Publishers."
 puts "Created #{Game.count} Games."
+puts "Created #{Page.count} Pages."
