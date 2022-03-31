@@ -42,6 +42,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'activeadmin' # Admin dashboard as rails Engine (mini applicaiton)
+gem 'devise' # provides basic authentication by way of credentials
 # Use Sass to process CSS
 # gem "sassc-rails"
 
