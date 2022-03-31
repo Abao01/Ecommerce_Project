@@ -23,10 +23,10 @@ games.each do |m|
       role:         m["roles"],
       publisher_id:     publisher["id"]
     )
-  else
-
   end
+
 end
+
 Page.create(
   title:     "About the website",
   content:   "The data powering this game website was provided by nintendo."
